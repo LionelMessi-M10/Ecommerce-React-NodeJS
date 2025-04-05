@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,6 +11,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  background: #f5f0f0;
 }
 
 .container {
@@ -19,5 +20,13 @@ body {
 }
 
 .link:hover {
-    color: #ff5252;
+  color: #ff5252 !important;
+}
+
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}
+
+header {
+  background: #fff;
 }
