@@ -2,17 +2,16 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./styles.css";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 const HomeSlider = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={10}
         loop={true}
         autoplay={{
           delay: 3000,
