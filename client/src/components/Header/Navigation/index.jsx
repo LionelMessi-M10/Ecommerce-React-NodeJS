@@ -30,7 +30,7 @@ const Navigation = () => {
           </div>
 
           <div className="col2 w-[65%]">
-            <ul className="flex items-center gap-5">
+            <ul className="flex items-center gap-5 nav">
               <li className="list-none">
                 <Link to={"/"} className="link transition text-[14px]">
                   <Button className="!text-black !capitalize link transition !font-bold">
@@ -38,7 +38,7 @@ const Navigation = () => {
                   </Button>
                 </Link>
               </li>
-              <li className="list-none">
+              <li className="list-none relative">
                 <Link
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
@@ -47,6 +47,88 @@ const Navigation = () => {
                     Fashions
                   </Button>
                 </Link>
+
+                <div className="submenu absolute !top-[120%] !left-[0%] min-w-[150px] bg-white shadow-md opacity-0 transition-all">
+                  <ul>
+                    <li className="list-none w-full relative">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                          Men
+                        </Button>
+                      </Link>
+
+                      <div className="submenu absolute !top-[0%] !left-[100%] min-w-[150px] bg-white shadow-md opacity-0 transition-all">
+                        <ul>
+                          <li className="list-none w-full">
+                            <Link to="/" className="w-full">
+                              <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                                Men
+                              </Button>
+                            </Link>
+                          </li>
+
+                          <li className="list-none w-full">
+                            <Link to="/" className="w-full">
+                              <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                                Women
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none w-full">
+                            <Link to="/" className="w-full">
+                              <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                                Kids
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none w-full">
+                            <Link to="/" className="w-full">
+                              <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                                Girls
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none w-full">
+                            <Link to="/" className="w-full">
+                              <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                                Boys
+                              </Button>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                          Women
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                          Kids
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                          Girls
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="list-none w-full">
+                      <Link to="/" className="w-full">
+                        <Button className="!text-black w-full !text-left !justify-start !rounded-none !font-bold">
+                          Boys
+                        </Button>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className="list-none">
                 <Link
