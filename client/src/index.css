@@ -14,6 +14,19 @@ body {
   background: #f5f0f0;
 }
 
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5252 !important;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #f5f0f0 !important;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -29,4 +42,50 @@ body {
 
 header {
   background: #fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: white !important;
+  border-radius: 50%;
+  padding: 22px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #ff5252 !important;
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  color: white !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: black;
+  font-size: 14px;
+}
+
+.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next {
+  width: 12px !important;
+  height: 12px !important;
+  min-width: 12px !important;
+  padding: 15px;
+}
+
+.homeCatSlider {
+  overflow: inherit !important;
+}
+
+.homeCatSlider .swiper-button-prev:after, .homeCatSlider .swiper-button-next:after {
+  font-size: 10px !important;
+}
+
+.homeCatSlider .swiper-button-prev {
+  left: 0px !important;
+}
+
+.homeCatSlider .swiper-button-next {
+  right: 0px !important;
 }
