@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import { Link } from "react-router-dom";
+import BannerBox from "../BannerBox";
 
 const AdsBannerSlider = (props) => {
   return (
@@ -11,15 +11,33 @@ const AdsBannerSlider = (props) => {
       <Swiper
         slidesPerView={props.items}
         spaceBetween={10}
-        loop={true}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper"
+        className="smlBtn"
       >
         <SwiperSlide>
-            <div className="box">
-                <img src="https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp" alt="Banner 1" className="rounded-md" />
-            </div>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link="/" />
         </SwiperSlide>
         
       </Swiper>

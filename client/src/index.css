@@ -51,6 +51,17 @@ header {
   padding: 22px;
 }
 
+.smlBtn .swiper-button-prev, .smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  padding: 18px;
+}
+
+.smlBtn .swiper-button-prev:after, .smlBtn .swiper-button-next:after {
+  font-size: 12px !important;
+}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background: #ff5252 !important;
