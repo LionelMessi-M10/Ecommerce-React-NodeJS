@@ -5,11 +5,12 @@ import { FaShippingFast } from "react-icons/fa";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import ProductsSlider from "../../components/ProductsSlider";
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (newValue) => {
+  const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
@@ -42,7 +43,7 @@ const Home = () => {
                 <Tab label="Footwear" />
                 <Tab label="Beauty" />
                 <Tab label="Clothes" />
-                <Tab label="Groceries" />
+                <Tab label="Sports" />
                 <Tab label="Groceries" />
                 <Tab label="Groceries" />
                 <Tab label="Groceries" />
@@ -51,6 +52,9 @@ const Home = () => {
               </Tabs>
             </div>
           </div>
+
+          <ProductsSlider items={6} />
+
         </div>
       </section>
 

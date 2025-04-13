@@ -108,3 +108,7 @@ header {
 .MuiTab-textColorPrimary.Mui-selected {
   color: #ff5252 !important;
 }
+
+.productsSlider .swiper-wrapper {
+  padding: 15px 0 !important;
+}
