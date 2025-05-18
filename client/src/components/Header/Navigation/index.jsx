@@ -16,7 +16,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="py-2">
+      <nav>
         <div className="container flex items-center justify-end gap-8">
           <div className="col1 w-[20%]">
             <Button
@@ -33,7 +33,7 @@ const Navigation = () => {
             <ul className="flex items-center gap-5 nav">
               <li className="list-none">
                 <Link to={"/"} className="link transition text-[14px]">
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Home
                   </Button>
                 </Link>
@@ -43,7 +43,7 @@ const Navigation = () => {
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
                 >
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Fashions
                   </Button>
                 </Link>
@@ -135,7 +135,7 @@ const Navigation = () => {
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
                 >
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Electronic
                   </Button>
                 </Link>
@@ -145,7 +145,7 @@ const Navigation = () => {
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
                 >
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Bags
                   </Button>
                 </Link>
@@ -155,7 +155,7 @@ const Navigation = () => {
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
                 >
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Footwears
                   </Button>
                 </Link>
@@ -165,7 +165,7 @@ const Navigation = () => {
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
                 >
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Groceries
                   </Button>
                 </Link>
@@ -175,7 +175,7 @@ const Navigation = () => {
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
                 >
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Beauty
                   </Button>
                 </Link>
@@ -185,7 +185,7 @@ const Navigation = () => {
                   to={"/"}
                   className="link transition text-[14px] font-[500]"
                 >
-                  <Button className="!text-black !capitalize link transition !font-bold">
+                  <Button className="!text-black !capitalize link transition !font-bold !py-4">
                     Weelness
                   </Button>
                 </Link>
