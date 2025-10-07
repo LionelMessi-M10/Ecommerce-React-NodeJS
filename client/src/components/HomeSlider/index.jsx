@@ -1,11 +1,10 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
+import { Autoplay, Navigation } from "swiper/modules";
 import "./styles.css";
-import { Navigation, Autoplay } from "swiper/modules";
 
 const HomeSlider = () => {
   return (
@@ -35,15 +34,6 @@ const HomeSlider = () => {
             <img
               src="https://serviceapi.spicezgold.com/download/1741660907985_NewProject.jpg"
               alt="Slide 2"
-							className="w-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item rounded-[20px] overflow-hidden w-full">
-            <img
-              src="https://serviceapi.spicezgold.com/download/1741660777364_NewProject(12).jpg"
-              alt="Slide 3"
 							className="w-full"
             />
           </div>

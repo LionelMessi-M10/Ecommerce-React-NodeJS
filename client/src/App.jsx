@@ -6,12 +6,12 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path={"/"} exact={true} element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path={"/"} exact={true} element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
