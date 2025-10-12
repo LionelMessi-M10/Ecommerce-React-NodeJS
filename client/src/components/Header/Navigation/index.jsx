@@ -1,11 +1,11 @@
-import React from "react";
-import "./style.css";
 import Button from "@mui/material/Button";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import React from "react";
 import { FaAngleDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { GoRocket } from "react-icons/go";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import CategoryPanel from "./CategoryPanel";
+import "./style.css";
 
 const Navigation = () => {
   const [isOpenCategotyPanel, setIsOpenCategoryPanel] = React.useState(false);
@@ -18,6 +18,8 @@ const Navigation = () => {
     <>
       <nav>
         <div className="container flex items-center justify-end gap-8">
+
+          {/* Button category */}
           <div className="col1 w-[20%]">
             <Button
               className="!text-black gap-2 w-full !font-bold"
@@ -29,6 +31,7 @@ const Navigation = () => {
             </Button>
           </div>
 
+          {/* Danh sách các loại sản phẩm trên thanh điều hướng */}
           <div className="col2 w-[65%]">
             <ul className="flex items-center gap-5 nav">
               <li className="list-none">
@@ -193,6 +196,7 @@ const Navigation = () => {
             </ul>
           </div>
 
+          {/* Free shipping */}
           <div className="col3 w-[15%] flex items-center justify-end gap-5">
             <p className="flex items-center gap-3 text-[14px] font-[500]">
               <GoRocket className="text-[20px]" /> Free International Delivery
@@ -200,6 +204,8 @@ const Navigation = () => {
           </div>
         </div>
       </nav>
+
+      {/* Category panel */}
       <CategoryPanel
         isOpenCategotyPanel={isOpenCategotyPanel}
         setIsOpenCategoryPanel={setIsOpenCategoryPanel}

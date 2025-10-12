@@ -1,14 +1,12 @@
-import React from "react";
+import { Button } from "@mui/material";
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import { FiPlusSquare } from "react-icons/fi";
-import { FiMinusSquare } from "react-icons/fi";
 import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import { useState } from "react";
+import { FiMinusSquare, FiPlusSquare } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
 import "./style.css";
-import { useState } from "react";
 
 const CategoryPanel = ({ isOpenCategotyPanel, setIsOpenCategoryPanel }) => {
   const [submenuIndex, setSubMenuIndex] = useState(null);
@@ -43,8 +41,9 @@ const CategoryPanel = ({ isOpenCategotyPanel, setIsOpenCategoryPanel }) => {
       </div>
       <Divider />
 
-      <div class="scroll">
+      <div className="scroll">
         <ul className="w-full">
+          {/* Menu */}
           <li className="list-none flex items-center justify-between relative flex-col">
             <Link to={"/"} className="w-full">
               <Button className="!text-left w-full !text-black !px-3 !justify-start !font-bold !capitalize">
@@ -63,6 +62,7 @@ const CategoryPanel = ({ isOpenCategotyPanel, setIsOpenCategoryPanel }) => {
               />
             )}
 
+            {/* Submenu 1 */}
             {submenuIndex === 0 && (
               <ul className="submenu w-full pl-3">
                 <li className="list-none relative">
@@ -84,6 +84,7 @@ const CategoryPanel = ({ isOpenCategotyPanel, setIsOpenCategoryPanel }) => {
                     />
                   )}
 
+                  {/* Submenu 2 */}
                   {innerSubmenuIndex === 0 && (
                     <ul className="inner_submenu w-full pl-4">
                       <li className="list-none relative mb-1">
@@ -126,6 +127,7 @@ const CategoryPanel = ({ isOpenCategotyPanel, setIsOpenCategoryPanel }) => {
           </li>
         </ul>
         
+        {/* Menu 2 */}
         <ul className="w-full">
           <li className="list-none flex items-center justify-between relative flex-col">
             <Link to={"/"} className="w-full">
