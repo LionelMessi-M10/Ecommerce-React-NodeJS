@@ -7,17 +7,19 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "./styles.css";
 
 const HomeSlider = () => {
+  // List banners
   return (
     <>
+      {/* Bọc list các slide */}
       <Swiper
-        spaceBetween={10}
-        loop={true}
+        spaceBetween={10} //Khong gian giua cac slide
+        loop={true} // lap lai slide
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
-        }}
-        navigation={true}
-        modules={[Navigation, Autoplay]}
+        }} // tu dong chuyen slide
+        navigation={true} // hien thi nut next - prev
+        modules={[Navigation, Autoplay]} // su dung modules
         className="mySwiper container !py-4"
       >
         <SwiperSlide>

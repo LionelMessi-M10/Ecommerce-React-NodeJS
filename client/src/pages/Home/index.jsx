@@ -1,14 +1,14 @@
-import React from "react";
-import HomeSlider from "../../components/HomeSlider";
-import HomeCatSlider from "../../components/HomeCatSlider";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+import { useState } from "react";
 import { FaShippingFast } from "react-icons/fa";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import HomeCatSlider from "../../components/HomeCatSlider";
+import HomeSlider from "../../components/HomeSlider";
 import ProductsSlider from "../../components/ProductsSlider";
 
 const Home = () => {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

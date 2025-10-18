@@ -1,12 +1,11 @@
-import React from "react";
-import "./style.css";
-import { Link } from "react-router-dom";
-import Rating from "@mui/material/Rating";
 import Button from "@mui/material/Button";
+import Rating from "@mui/material/Rating";
+import Tooltip from "@mui/material/Tooltip";
 import { FaRegHeart } from "react-icons/fa";
 import { IoGitCompareOutline } from "react-icons/io5";
 import { MdZoomOutMap } from "react-icons/md";
-import Tooltip from "@mui/material/Tooltip";
+import { Link } from "react-router-dom";
+import "./style.css";
 
 const ProductItem = () => {
   return (
