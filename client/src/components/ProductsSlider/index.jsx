@@ -1,51 +1,52 @@
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ProductItem from "../ProductItem";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import ProductItem from '../ProductItem';
 
 const ProductsSlider = (props) => {
   return (
-    <section className="productsSlider py-3">
+    <section className='productsSlider py-3'>
+			{/* Slide sản phẩm */}
       <Swiper
         slidesPerView={props.items}
         spaceBetween={10}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper"
+        className='mySwiper'
       >
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <ProductItem />
+          <ProductItem />
         </SwiperSlide>
       </Swiper>
     </section>
