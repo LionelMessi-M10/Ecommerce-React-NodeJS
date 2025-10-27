@@ -8,6 +8,7 @@ import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import AdsBannerSlider from '../../components/AdsBannerSlider';
 import BlogItem from '../../components/BlogItem';
+import Footer from '../../components/Footer/Footer';
 import HomeCatSlider from '../../components/HomeCatSlider';
 import HomeSlider from '../../components/HomeSlider';
 import ProductsSlider from '../../components/ProductsSlider';
@@ -105,8 +106,8 @@ const Home = () => {
         <div className='container'>
           <h2 className='text-[20px] font-[600] mb-4'>From The Blog</h2>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={10}
+            slidesPerView={4}
+            spaceBetween={30}
             loop={true}
             navigation={true}
             modules={[Navigation]}
@@ -115,20 +116,25 @@ const Home = () => {
             <SwiperSlide>
               <BlogItem />
             </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
           </Swiper>
         </div>
       </section>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footer />
+
+      
     </>
   );
 };
