@@ -44,7 +44,7 @@ const Footer = () => {
         <hr />
 
         <div className='footer flex items-center py-8'>
-          <div className='part1'>
+          <div className='part1 w-[25%]'>
             <h2 className='text-[20px] font-[600] mb-4'>Contact us</h2>
             <p className='text-[13px] font-[400] pb-4'>
               Classyshop - Mega Super Store 507-Union Trade France
@@ -64,6 +64,42 @@ const Footer = () => {
                 Online Chat <br />
                 Get Expert Help
               </span>
+            </div>
+          </div>
+
+          <div className='part2 w-[40%] flex'>
+            <div className='part2_col1 w-[50%]'>
+              <h2 className='text-[20px] font-[600] mb-4'>Product</h2>
+
+              <ul className='list'>
+                <li className='list-none text-[14px] w-full mb-2'>
+                  <Link to="/" className='link'>Prices drop</Link>
+                </li>
+                <li className='list-none text-[14px] w-full mb-2'>
+                  <Link to="/" className='link'>New Products</Link>
+                </li>
+                <li className='list-none text-[14px] w-full mb-2'>
+                  <Link to="/" className='link'>Best Sales</Link>
+                </li>
+                <li className='list-none text-[14px] w-full mb-2'>
+                  <Link to="/" className='link'>Contact Us</Link>
+                </li>
+                <li className='list-none text-[14px] w-full mb-2'>
+                  <Link to="/" className='link'>Sitemap</Link>
+                </li>
+                <li className='list-none text-[14px] w-full mb-2'>
+                  <Link to="/" className='link'>Store</Link>
+                </li>
+              </ul>
+            </div>
+            <div className='part2_col2 w-[50%]'>
+              <h2 className='text-[20px] font-[600] mb-4'>Our Company</h2>
+
+              <ul className='list'>
+                <li className='list-none text-[14px] w-full mb-2'>
+                  <Link to="/" className='link'>Delivery</Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
