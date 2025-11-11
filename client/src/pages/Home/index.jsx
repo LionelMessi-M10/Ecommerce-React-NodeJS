@@ -8,9 +8,11 @@ import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import AdsBannerSlider from '../../components/AdsBannerSlider';
 import BlogItem from '../../components/BlogItem';
-import Footer from '../../components/Footer/Footer';
 import HomeCatSlider from '../../components/HomeCatSlider';
-import HomeSlider from '../../components/HomeSlider';
+// import HomeSlider from '../../components/HomeSlider';
+import AdsBannerSliderV2 from '../../components/AdsBannerSliderV2';
+import BannerBoxV2 from '../../components/BannerBoxV2';
+import HomeBannerV2 from '../../components/HomeSliderV2';
 import ProductsSlider from '../../components/ProductsSlider';
 
 const Home = () => {
@@ -22,7 +24,21 @@ const Home = () => {
 
   return (
     <>
-      <HomeSlider />
+      {/* <HomeSlider /> */}
+
+      <section>
+        <div className='container flex gap-5 py-6'>
+          <div className='part1 w-[70%]'>
+            <HomeBannerV2 />
+          </div>
+
+          <div className='part2 w-[30%] flex flex-col items-center justify-between gap-2'>
+            <BannerBoxV2 info="left" image={'https://serviceapi.spicezgold.com/download/1741663408792_1737020756772_New_Project_1.png'} />
+            <BannerBoxV2 info="left" image={'https://serviceapi.spicezgold.com/download/1741663408792_1737020756772_New_Project_1.png'} />
+          </div>
+        </div>
+      </section>
+
       <HomeCatSlider />
 
       <section className='py-8 bg-white'>
@@ -82,7 +98,7 @@ const Home = () => {
             </div>
           </div>
 
-          <AdsBannerSlider items={4} />
+          <AdsBannerSliderV2 items={4} />
         </div>
       </section>
 
@@ -132,9 +148,6 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer />
-
-      
     </>
   );
 };

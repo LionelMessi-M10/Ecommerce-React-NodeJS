@@ -4,6 +4,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
 import { BiSupport } from 'react-icons/bi';
 import { BsWallet2 } from 'react-icons/bs';
+import { FaFacebookF, FaInstagram, FaPinterestP, FaYoutube } from "react-icons/fa";
 import { IoChatboxOutline } from 'react-icons/io5';
 import { LiaGiftSolid, LiaShippingFastSolid } from 'react-icons/lia';
 import { PiKeyReturnLight } from 'react-icons/pi';
@@ -175,13 +176,48 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className='bottomStrip border-t border-[rgba(0,0,0,0.2)] py-4'>
-        <div className='container'>
+      <div className='bottomStrip border-t border-[rgba(0,0,0,0.1)] py-4 bg-white'>
+        <div className='container flex items-center justify-between'>
+          <ul className='flex items-center gap-2'>
+            <li className='list-none'>
+              <Link to="/" target='_blank' className='w-[35px] h-[35px] rounded-full border border-[rgba(0, 0, 0, 0.1)] flex items-center justify-center  group hover:bg-primary transition-all duration-300'>
+                <FaFacebookF className='text-[15px] group-hover:text-white' />
+              </Link>
+            </li>
 
+            <li className='list-none'>
+              <Link to="/" target='_blank' className='w-[35px] h-[35px] rounded-full border border-[rgba(0, 0, 0, 0.1)] flex items-center justify-center  group hover:bg-primary transition-all duration-300'>
+                <FaYoutube className='text-[15px] group-hover:text-white' />
+              </Link>
+            </li>
+
+            <li className='list-none'>
+              <Link to="/" target='_blank' className='w-[35px] h-[35px] rounded-full border border-[rgba(0, 0, 0, 0.1)] flex items-center justify-center  group hover:bg-primary transition-all duration-300'>
+                <FaInstagram className='text-[15px] group-hover:text-white' />
+              </Link>
+            </li>
+
+            <li className='list-none'>
+              <Link to="/" target='_blank' className='w-[35px] h-[35px] rounded-full border border-[rgba(0, 0, 0, 0.1)] flex items-center justify-center  group hover:bg-primary transition-all duration-300'>
+                <FaPinterestP className='text-[15px] group-hover:text-white' />
+              </Link>
+            </li>
+          </ul>
+
+          <p className='text-[13px] text-center mb-0'>
+            © 2025 - Ecommerce Template
+          </p>
+
+          <div className='flex items-center'>
+            <img src="/carte_bleue.png" alt="Carte" />
+            <img src="/visa.png" alt="Visa" />
+            <img src="/master_card.png" alt="MasterCard" />
+            <img src="/american_express.png" alt="American express" />
+            <img src="/paypal.png" alt="PayPal" />
+          </div>
         </div>
       </div>
 
-      <br/> <br/><br/><br/><br/>
     </>
   );
 };

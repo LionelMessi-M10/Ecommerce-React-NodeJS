@@ -20,7 +20,7 @@ const HomeSlider = () => {
         }} // tu dong chuyen slide
         navigation={true} // hien thi nut next - prev
         modules={[Navigation, Autoplay]} // su dung modules
-        className="mySwiper container !py-4"
+        className="mySwiper !py-4"
       >
         <SwiperSlide>
           <div className="item rounded-[20px] overflow-hidden w-full">

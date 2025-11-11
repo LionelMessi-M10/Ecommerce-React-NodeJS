@@ -1,0 +1,22 @@
+.swiper-button-prev,
+.swiper-button-next {
+  background: white !important;
+  border-radius: 50%;
+  padding: 22px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #ff5252 !important;
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  color: white !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: black;
+  font-size: 14px;
+}
