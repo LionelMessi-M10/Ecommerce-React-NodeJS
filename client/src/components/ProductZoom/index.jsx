@@ -29,7 +29,7 @@ const ProductZoom = () => {
             spaceBetween={0}
             navigation={true}
             modules={[Navigation]}
-            className='zoomProductSliderThumbs h-[500px] overflow-hidden'
+            className='zoomProductSliderThumbs h-[500px] overflow-hidden rounded-md'
           >
             <SwiperSlide>
               <div className={`item rounded-md overflow-hidden cursor-pointer group ${sliderIndex === 0 ? 'opacity-1' : 'opacity-30'}`} onClick={() => goto(0)}>
