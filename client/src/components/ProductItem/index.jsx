@@ -60,7 +60,7 @@ const ProductItem = () => {
 
 			{/* Thông tin sản phẩm */}
       <div className='info p-3 py-5'>
-        <h6 className='text-[13px]'>
+        <h6 className='text-[13px] !font-[400]'>
           <Link to={'/'} className='link transition-all'>
             Product 1
           </Link>
