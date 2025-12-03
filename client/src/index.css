@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   background: #f5f0f0;
   color: #3e3e3e;
@@ -23,7 +23,12 @@ p {
   margin-top: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
@@ -36,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #ff5252 !important;
   border-radius: 10px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: #f5f0f0 !important;
 }
 
@@ -75,14 +80,16 @@ header {
   padding: 22px;
 }
 
-.smlBtn .swiper-button-prev, .smlBtn .swiper-button-next {
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
   width: 30px !important;
   height: 30px !important;
   min-width: 30px !important;
   padding: 18px;
 }
 
-.smlBtn .swiper-button-prev:after, .smlBtn .swiper-button-next:after {
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
   font-size: 12px !important;
 }
 
@@ -102,7 +109,8 @@ header {
   font-size: 14px;
 }
 
-.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next {
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
   width: 12px !important;
   height: 12px !important;
   min-width: 12px !important;
@@ -113,7 +121,8 @@ header {
   overflow: inherit !important;
 }
 
-.homeCatSlider .swiper-button-prev:after, .homeCatSlider .swiper-button-next:after {
+.homeCatSlider .swiper-button-prev:after,
+.homeCatSlider .swiper-button-next:after {
   font-size: 10px !important;
 }
 
@@ -204,7 +213,8 @@ footer form input::placeholder {
   opacity: 1;
 }
 
-.Mui-selected.MuiPaginationItem-page, .Mui-selected.MuiPaginationItem-page:hover {
+.Mui-selected.MuiPaginationItem-page,
+.Mui-selected.MuiPaginationItem-page:hover {
   background: #ff5252 !important;
   color: #fff !important;
 }
@@ -227,7 +237,8 @@ footer form input::placeholder {
   height: 30px !important;
   border-radius: 0px !important;
 }
-.zoomProductSliderThumbs .swiper-button-next::after, .zoomProductSliderThumbs .swiper-button-prev::after {
+.zoomProductSliderThumbs .swiper-button-next::after,
+.zoomProductSliderThumbs .swiper-button-prev::after {
   transform: rotate(90deg);
 }
 
@@ -238,11 +249,11 @@ footer form input::placeholder {
   color: rgba(0, 0, 0, 0.7);
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .reviewScroll::-webkit-scrollbar {
@@ -250,4 +261,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .reviewScroll::-webkit-scrollbar-thumb {
   background: #ccc !important;
+}
+
+.productDetailsModal .MuiDialogContent-root {
+  padding: 0;
 }
