@@ -61,6 +61,11 @@ h6 {
   background: #171717 !important;
 }
 
+.btn-lg {
+  font-size: 18px !important;
+  padding: 10px 20px !important;
+}
+
 .link:hover {
   color: #ff5252 !important;
 }
@@ -265,4 +270,9 @@ input[type='number']::-webkit-outer-spin-button {
 
 .productDetailsModal .MuiDialogContent-root {
   padding: 0;
+}
+
+.cartPanel .MuiPaper-root {
+  width: 400px;
+  overflow: hidden;
 }

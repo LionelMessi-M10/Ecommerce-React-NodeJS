@@ -9,8 +9,10 @@ import Header from './components/Header';
 import ProductDetailsComponent from './components/ProductDetails';
 import ProductZoom from './components/ProductZoom';
 import Home from './pages/Home';
+import Login from './pages/Login';
 import ProductDetails from './pages/ProductDetails';
 import ProductListing from './pages/ProductListing';
+import Register from './pages/Register';
 
 const MyContext = createContext();
 
@@ -19,13 +21,21 @@ function App() {
   const [openProductDetailsModel, setOpenProductDetailsModel] = useState(false);
   const [fullWidth, setFullWidth] = useState(true);
   const [maxWidth, setMaxwidth] = useState('lg');
+  const [openCartPanel, setOpenCartPanel] = useState(false);
 
   const handleCloseProductDetailsModel = () => {
     setOpenProductDetailsModel(false);
   };
 
+  const toggleCartPanel = (newOpen) => () => {
+    setOpenCartPanel(newOpen);
+  };
+
   const values = {
-    setOpenProductDetailsModel
+    setOpenProductDetailsModel,
+    openCartPanel,
+    setOpenCartPanel,
+    toggleCartPanel
   }
 
   return (
@@ -36,7 +46,9 @@ function App() {
           <Routes>
             <Route path={'/'} exact={true} element={<Home />} />
             <Route path={'/productListing'} exact={true} element={<ProductListing />} />
-            <Route path={'/productDetails/:id'} exact={true} element={<ProductDetails />} />
+            <Route path={'/product/:id'} exact={true} element={<ProductDetails />} />
+            <Route path={'/login'} exact={true} element={<Login />} />
+            <Route path={'/register'} exact={true} element={<Register />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
@@ -69,9 +81,11 @@ function App() {
           </div>
         </DialogContent>
       </Dialog>
+
     </>
   );
 }
 
 export default App;
 export { MyContext };
+

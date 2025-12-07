@@ -16,6 +16,7 @@ const ProductListing = () => {
   const [itemView, setItemView] = useState('grid');
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };

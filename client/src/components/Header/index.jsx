@@ -2,9 +2,11 @@ import Badge from '@mui/material/Badge';
 import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
 import Tooltip from '@mui/material/Tooltip';
+import { useContext } from 'react';
 import { IoIosGitCompare, IoMdHeartEmpty } from 'react-icons/io';
 import { MdOutlineShoppingCart } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { MyContext } from '../../App';
 import Search from '../Search';
 import Navigation from './Navigation';
 
@@ -18,6 +20,9 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const Header = () => {
+
+  const context = useContext(MyContext)
+
   return (
     <header className='relative'>
       {/* Thanh tiêu đề cho web, nằm trên navbar */}
@@ -96,7 +101,7 @@ const Header = () => {
               </li>
               <li>
                 <Tooltip title='Cart' placement='top'>
-                  <IconButton aria-label='cart'>
+                  <IconButton aria-label='cart' onClick={() => context.setOpenCartPanel(true)}>
                     <StyledBadge badgeContent={4} color='secondary'>
                       <MdOutlineShoppingCart />
                     </StyledBadge>

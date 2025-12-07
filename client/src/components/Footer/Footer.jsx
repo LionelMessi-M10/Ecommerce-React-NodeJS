@@ -1,16 +1,23 @@
 import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
+import Drawer from '@mui/material/Drawer';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
+import { useContext } from 'react';
 import { BiSupport } from 'react-icons/bi';
 import { BsWallet2 } from 'react-icons/bs';
 import { FaFacebookF, FaInstagram, FaPinterestP, FaYoutube } from "react-icons/fa";
-import { IoChatboxOutline } from 'react-icons/io5';
+import { IoChatboxOutline, IoCloseSharp } from 'react-icons/io5';
 import { LiaGiftSolid, LiaShippingFastSolid } from 'react-icons/lia';
 import { PiKeyReturnLight } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
+import { MyContext } from '../../App';
+import CartPanel from '../CartPanel';
 
 const Footer = () => {
+
+  const context = useContext(MyContext)
+
   return (
     <>
       <footer className='py-6 bg-[#fafafa]'>
@@ -218,6 +225,15 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Cart panel */}
+      <Drawer open={context.openCartPanel} onClose={context.toggleCartPanel(false)} anchor='right' className='cartPanel overflow-hidden'>
+        <div className='flex items-center justify-between py-3 px-4 gap-3 border-b border-[rgba(0, 0, 0, 0.1)]'>
+          <h4>Shopping Cart (1)</h4>
+          <IoCloseSharp className='text-[20px] cursor-pointer' onClick={context.toggleCartPanel(false)} />
+        </div>
+
+        <CartPanel />
+      </Drawer>
     </>
   );
 };
