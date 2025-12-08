@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header';
 import ProductDetailsComponent from './components/ProductDetails';
 import ProductZoom from './components/ProductZoom';
+import CartPage from './pages/Cart';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import ProductDetails from './pages/ProductDetails';
@@ -49,6 +50,7 @@ function App() {
             <Route path={'/product/:id'} exact={true} element={<ProductDetails />} />
             <Route path={'/login'} exact={true} element={<Login />} />
             <Route path={'/register'} exact={true} element={<Register />} />
+            <Route path={'/cart'} exact={true} element={<CartPage />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
