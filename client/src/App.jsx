@@ -10,6 +10,7 @@ import Header from './components/Header';
 import ProductDetailsComponent from './components/ProductDetails';
 import ProductZoom from './components/ProductZoom';
 import CartPage from './pages/Cart';
+import Checkout from './pages/Checkout';
 import ForgotPassword from './pages/ForgotPassword';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -65,6 +66,7 @@ function App() {
             <Route path={'/cart'} exact={true} element={<CartPage />} />
             <Route path={'/vertify'} exact={true} element={<Vertify />} />
             <Route path={'/forgot-password'} exact={true} element={<ForgotPassword />} />
+            <Route path={'/checkout'} exact={true} element={<Checkout />} />
           </Routes>
           <Footer />
         </MyContext.Provider>

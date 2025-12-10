@@ -1,6 +1,187 @@
+import { Button } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import { BsBagCheckFill } from 'react-icons/bs';
+
 const Checkout = () => {
   return (
-    <div>Checkout</div>
-  )
-}
-export default Checkout
+    <section className='py-10'>
+      <div className='container flex gap-5'>
+        <div className='leftCol w-[75%]'>
+          <div className='card bg-white shadow-md p-5 rounded-md w-full'>
+            <h1>Billing Details</h1>
+
+            <form className='w-full mt-5'>
+              <div className='flex items-center gap-5 pb-5'>
+                <div className='col w-[50%]'>
+                  <TextField className='w-full' label='Full name' variant='outlined' size='small' />
+                </div>
+                <div className='col w-[50%]'>
+                  <TextField
+                    type='email'
+                    className='w-full'
+                    label='Email'
+                    variant='outlined'
+                    size='small'
+                  />
+                </div>
+              </div>
+
+              <h6 className='text-[14px] font-[500] mb-3'>Street Address *</h6>
+              <div className='flex items-center gap-5 pb-5'>
+                <div className='col w-full'>
+                  <TextField
+                    className='w-full'
+                    label='House No. and Street Name'
+                    variant='outlined'
+                    size='small'
+                  />
+                </div>
+              </div>
+              <div className='flex items-center gap-5 pb-5'>
+                <div className='col w-full'>
+                  <TextField
+                    className='w-full'
+                    label='Apartment, suite, unit, etc. (optional)'
+                    variant='outlined'
+                    size='small'
+                  />
+                </div>
+              </div>
+
+              <h6 className='text-[14px] font-[500] mb-3'>Town / City *</h6>
+              <div className='flex items-center gap-5 pb-5'>
+                <div className='col w-full'>
+                  <TextField className='w-full' label='City' variant='outlined' size='small' />
+                </div>
+              </div>
+
+              <h6 className='text-[14px] font-[500] mb-3'>State / Country *</h6>
+              <div className='flex items-center gap-5 pb-5'>
+                <div className='col w-full'>
+                  <TextField className='w-full' label='State' variant='outlined' size='small' />
+                </div>
+              </div>
+
+              <h6 className='text-[14px] font-[500] mb-3'>Postcode / ZIP *</h6>
+              <div className='flex items-center gap-5 pb-5'>
+                <div className='col w-full'>
+                  <TextField className='w-full' label='ZIP Code' variant='outlined' size='small' />
+                </div>
+              </div>
+              <div className='flex items-center gap-5 pb-5'>
+                <div className='col w-[50%]'>
+                  <TextField
+                    className='w-full'
+                    label='Phone Number'
+                    variant='outlined'
+                    size='small'
+                  />
+                </div>
+                <div className='col w-[50%]'>
+                  <TextField
+                    type='email'
+                    className='w-full'
+                    label='Email Address'
+                    variant='outlined'
+                    size='small'
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div className='rightCol w-[30%]'>
+          <div className='card shadow-md bg-white p-5 rounded-md'>
+            <h2 className='mb-4'>Your Order</h2>
+
+            <div className='flex items-center justify-between py-3 border-t border-b border-[rgba(0, 0, 0, 0.1)]'>
+              <span className='text-[14px] font-[600]'>Product</span>
+              <span className='text-[14px] font-[600]'>Subtotal</span>
+            </div>
+
+            <div className='scroll max-h-[250px] overflow-x-hidden overflow-y-scroll pr-2 mb-5'>
+              <div className='flex items-center justify-between py-2'>
+                <div className='part1 flex items-center gap-3'>
+                  <div className='img w-[50px] h-[50px] object-cover overflow-hidden rounded-md group cursor-pointer'>
+                    <img
+                      src='https://htmediagroup.vn/wp-content/uploads/2021/08/Chup-anh-quan-ao-1.jpg'
+                      alt='anh'
+                      className='w-full group-hover:scale-105 transition-all'
+                    />
+                  </div>
+
+                  <div className='info'>
+                    <h4 className='text-[14px] '>Quan ao ...</h4>
+                    <span className='text-[13px]'>Qty: 1</span>
+                  </div>
+                </div>
+
+                <span className='text-[14px] font-[500]'>1300000d</span>
+              </div>
+              <div className='flex items-center justify-between py-2'>
+                <div className='part1 flex items-center gap-3'>
+                  <div className='img w-[50px] h-[50px] object-cover overflow-hidden rounded-md group cursor-pointer'>
+                    <img
+                      src='https://htmediagroup.vn/wp-content/uploads/2021/08/Chup-anh-quan-ao-1.jpg'
+                      alt='anh'
+                      className='w-full group-hover:scale-105 transition-all'
+                    />
+                  </div>
+
+                  <div className='info'>
+                    <h4 className='text-[14px] '>Quan ao ...</h4>
+                    <span className='text-[13px]'>Qty: 1</span>
+                  </div>
+                </div>
+
+                <span className='text-[14px] font-[500]'>1300000d</span>
+              </div>
+              <div className='flex items-center justify-between py-2'>
+                <div className='part1 flex items-center gap-3'>
+                  <div className='img w-[50px] h-[50px] object-cover overflow-hidden rounded-md group cursor-pointer'>
+                    <img
+                      src='https://htmediagroup.vn/wp-content/uploads/2021/08/Chup-anh-quan-ao-1.jpg'
+                      alt='anh'
+                      className='w-full group-hover:scale-105 transition-all'
+                    />
+                  </div>
+
+                  <div className='info'>
+                    <h4 className='text-[14px] '>Quan ao ...</h4>
+                    <span className='text-[13px]'>Qty: 1</span>
+                  </div>
+                </div>
+
+                <span className='text-[14px] font-[500]'>1300000d</span>
+              </div>
+              <div className='flex items-center justify-between py-2'>
+                <div className='part1 flex items-center gap-3'>
+                  <div className='img w-[50px] h-[50px] object-cover overflow-hidden rounded-md group cursor-pointer'>
+                    <img
+                      src='https://htmediagroup.vn/wp-content/uploads/2021/08/Chup-anh-quan-ao-1.jpg'
+                      alt='anh'
+                      className='w-full group-hover:scale-105 transition-all'
+                    />
+                  </div>
+
+                  <div className='info'>
+                    <h4 className='text-[14px] '>Quan ao ...</h4>
+                    <span className='text-[13px]'>Qty: 1</span>
+                  </div>
+                </div>
+
+                <span className='text-[14px] font-[500]'>1300000d</span>
+              </div>
+            </div>
+
+            <Button className='btn-org btn-lg w-full flex items-center gap-2'>
+              <BsBagCheckFill className='text-[20px]' /> Checkout
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+export default Checkout;
