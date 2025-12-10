@@ -1,13 +1,29 @@
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { MyContext } from '../../App';
 
 const Login = () => {
 
   const [isShowPassword, setIsShowPassword] = useState(false);
+  const [formFields, setFormFields] = useState({
+    email: '',
+    password: ''
+  });
+
+  const context = useContext(MyContext);
+
+  const history = useNavigate();
+
+  const forgotPassword = () => {
+    if(formFields.email !== "") {
+      history("/vertify");
+      context.openAlertBox("success", "OTP Send");
+    }
+  }
 
   return (
     <section className="section py-10">
@@ -17,11 +33,14 @@ const Login = () => {
 
           <form className='w-full mt-5'>
             <div className='form-group w-full mb-5'>
-              <TextField type='email' id="email" label="Email Id *" variant="outlined" className='w-full' />
+              <TextField
+                type='email' id="email" label="Email Id *" variant="outlined" className='w-full' name='email'
+                onChange={(e) => setFormFields(e.target.value)}
+              />
             </div>
             <div className='form-group w-full mb-5 relative'>
-              <TextField type={isShowPassword === true ? 'text' : 'password'} id="password" label="Password *" variant="outlined" className='w-full' />
-              <Button 
+              <TextField type={isShowPassword === true ? 'text' : 'password'} id="password" name='password' label="Password *" variant="outlined" className='w-full' />
+              <Button
                 className='!absolute !top-3 right-[10px] !w-[35px] !h-[35px] !min-w-[35px] !text-black !rounded-full opacity-75'
                 onClick={() => setIsShowPassword(!isShowPassword)}
               >
@@ -31,7 +50,7 @@ const Login = () => {
               </Button>
             </div>
 
-            <a className='link cursor-pointer text-[14px] font-[600]'>
+            <a className='link cursor-pointer text-[14px] font-[600]' onClick={forgotPassword}>
               Forgot password ?
             </a>
 

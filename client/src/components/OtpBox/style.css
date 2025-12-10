@@ -1,0 +1,13 @@
+.containerVertify {
+  display: flex;
+  gap: 10px
+}
+
+.containerVertify .vertifyInput {
+  width: "45px";
+  height: "50px";
+  text-align: center;
+  font-size: 22px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
