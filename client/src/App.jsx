@@ -15,6 +15,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import MyAccount from './pages/MyAccount';
+import MyList from './pages/MyList';
 import ProductDetails from './pages/ProductDetails';
 import ProductListing from './pages/ProductListing';
 import Register from './pages/Register';
@@ -73,6 +74,7 @@ function App() {
             <Route path={'/forgot-password'} exact={true} element={<ForgotPassword />} />
             <Route path={'/checkout'} exact={true} element={<Checkout />} />
             <Route path={'/my-account'} exact={true} element={<MyAccount />} />
+            <Route path={'/my-list'} exact={true} element={<MyList />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
