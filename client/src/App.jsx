@@ -14,6 +14,7 @@ import Checkout from './pages/Checkout';
 import ForgotPassword from './pages/ForgotPassword';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import MyAccount from './pages/MyAccount';
 import ProductDetails from './pages/ProductDetails';
 import ProductListing from './pages/ProductListing';
 import Register from './pages/Register';
@@ -26,6 +27,8 @@ function App() {
   const [openProductDetailsModel, setOpenProductDetailsModel] = useState(false);
   const [fullWidth, setFullWidth] = useState(true);
   const [maxWidth, setMaxwidth] = useState('lg');
+  const [isLogin, setIsLogin] = useState(true);
+
   const [openCartPanel, setOpenCartPanel] = useState(false);
 
   const handleCloseProductDetailsModel = () => {
@@ -49,7 +52,9 @@ function App() {
     openCartPanel,
     setOpenCartPanel,
     toggleCartPanel,
-    openAlertBox
+    openAlertBox,
+    isLogin,
+    setIsLogin
   }
 
   return (
@@ -67,6 +72,7 @@ function App() {
             <Route path={'/vertify'} exact={true} element={<Vertify />} />
             <Route path={'/forgot-password'} exact={true} element={<ForgotPassword />} />
             <Route path={'/checkout'} exact={true} element={<Checkout />} />
+            <Route path={'/my-account'} exact={true} element={<MyAccount />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
