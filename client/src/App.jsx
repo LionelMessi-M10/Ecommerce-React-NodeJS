@@ -16,6 +16,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import MyAccount from './pages/MyAccount';
 import MyList from './pages/MyList';
+import Orders from './pages/Orders';
 import ProductDetails from './pages/ProductDetails';
 import ProductListing from './pages/ProductListing';
 import Register from './pages/Register';
@@ -75,6 +76,7 @@ function App() {
             <Route path={'/checkout'} exact={true} element={<Checkout />} />
             <Route path={'/my-account'} exact={true} element={<MyAccount />} />
             <Route path={'/my-list'} exact={true} element={<MyList />} />
+            <Route path={'/my-orders'} exact={true} element={<Orders />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
