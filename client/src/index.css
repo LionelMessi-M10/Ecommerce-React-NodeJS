@@ -45,6 +45,10 @@ h6 {
   background: #f5f0f0 !important;
 }
 
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+
 .container {
   width: 90%;
   margin: auto;
